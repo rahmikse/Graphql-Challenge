@@ -15,12 +15,14 @@ Run project
 
 Query examples 
 
+`
 query getAllUsers {
   users {
     id
     fullName
   }
 }
+`
 
 query getAllPosts {
   posts {
