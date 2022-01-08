@@ -13,7 +13,7 @@ Run project
 ### `npm run dev`
 ### Open http://localhost:4000/
 
-Query examples 
+#Query examples 
 
 `
 query getAllUsers {
