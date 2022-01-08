@@ -23,7 +23,7 @@ query getAllUsers {
   }
 }
 `
-
+--------------------
 `
 query getAllPosts {
   posts {
@@ -37,7 +37,7 @@ query getAllPosts {
   }
 }
 `
-
+--------------------
 
 `
 query getAllComments {
@@ -56,9 +56,11 @@ query getAllComments {
   }
 }
 `
+--------------------
+`
 
 query getUser {
-  user(id: "1") {
+  user(id: "1"){
     id
     fullName
     posts {
@@ -68,7 +70,8 @@ query getUser {
     }
   }
 }
-
+`
+--------------------
 `
 query getPost {
   post(id: "1") {
@@ -78,12 +81,11 @@ query getPost {
     user {
       id
       fullName
-      
     }
   }
 }
 `
-
+--------------------
 `
 query getComment {
   comment(id: "2") {
@@ -98,11 +100,10 @@ query getComment {
     	id
       title
     }
-    
   }
 }
 `
-
+--------------------
 `
 query { 
 	post(id:"1") { 
@@ -120,29 +121,12 @@ query {
   }
 }
 `
+--------------------
 
-`
-query {
-  user(id: "1") {
-    fullName
-    posts {
-      title
-      comment {
-        id
-        text
-      }
-    }
-  }
-}
 
-`
 `
 query {
   user(id: "2") {
     fullName
-    comment { 
-    	text
-    }
-  }
-}
+    comment{ text }}}
 `
